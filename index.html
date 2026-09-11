@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASWIN WEB STUDIO</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#050505;color:#fff;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:500px;height:500px;filter:blur(180px);opacity:.15;z-index:-1}
+body:before{background:#00ffff;top:-150px;left:-150px;animation:move1 6s infinite alternate}
+body:after{background:#9d00ff;right:-150px;bottom:-150px;animation:move2 7s infinite alternate}
+@keyframes move1{to{transform:translate(250px,200px)}}@keyframes move2{to{transform:translate(-200px,-180px)}}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;position:sticky;top:0;background:#050505cc;backdrop-filter:blur(15px);z-index:10}
+.logo{color:#00ffff;font-size:22px;font-weight:bold;text-shadow:0 0 15px #00ffff}
+nav a{color:#fff;text-decoration:none;margin-left:20px}nav a:hover{color:#00ffff}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px}
+.hero h1{font-size:clamp(45px,10vw,90px);color:#00ffff;text-shadow:0 0 10px #00ffff,0 0 30px #00ffff}
+.hero h2{margin-top:15px;font-size:clamp(20px,4vw,32px)}
+.hero p{max-width:600px;margin:20px auto;color:#bbb;line-height:1.7}
+.btn{display:inline-block;margin-top:15px;padding:14px 28px;border:1px solid #00ffff;border-radius:30px;color:#00ffff;text-decoration:none;transition:.3s;box-shadow:0 0 15px #00ffff4d}
+.btn:hover{background:#00ffff;color:#000;box-shadow:0 0 30px #00ffff}
+section{padding:80px 8%}.title{text-align:center;font-size:38px;margin-bottom:45px;color:#00ffff;text-shadow:0 0 15px #00ffff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.card,.project{padding:30px;background:#ffffff0a;border:1px solid #00ffff4d;border-radius:20px;transition:.4s}
+.card:hover{transform:translateY(-10px);border-color:#00ffff;box-shadow:0 0 30px #00ffff40}
+.card span{font-size:40px}.card h3{margin:15px 0;color:#00ffff}.card p,.project p{color:#aaa;line-height:1.6}
+.project{min-height:180px;background:linear-gradient(135deg,#071111,#10071a);border-color:#222}
+.project:hover{border-color:#9d00ff;box-shadow:0 0 30px #9d00ff4d;transform:scale(1.02)}
+.project h3{color:#9d00ff;margin-bottom:10px}
+.about{max-width:750px;margin:auto;text-align:center;color:#bbb;line-height:1.8}
+.contact{text-align:center}.whatsapp{display:inline-block;margin-top:20px;padding:15px 30px;border-radius:30px;background:#00ff88;color:#000;text-decoration:none;font-weight:bold;box-shadow:0 0 25px #00ff8866}
+footer{text-align:center;padding:30px;border-top:1px solid #222;color:#777}
+@media(max-width:600px){nav{padding:18px 5%}nav a{margin-left:8px;font-size:13px}section{padding:60px 5%}}
+</style>
+</head>
+<body>
+<nav><div class="logo">ASWIN WEB STUDIO</div><div><a href="#services">Services</a><a href="#portfolio">Work</a><a href="#contact">Contact</a></div></nav>
+<section class="hero">
+<h1>ASWIN</h1><h2>WEB STUDIO</h2>
+<p>I create modern websites, QR solutions and digital experiences for businesses.</p>
+<a href="#portfolio" class="btn">VIEW MY WORK</a>
+</section>
+<section id="services"><h2 class="title">MY SERVICES</h2><div class="cards">
+<div class="card"><span>🌐</span><h3>Websites</h3><p>Modern and mobile-friendly websites for shops, businesses and personal brands.</p></div>
+<div class="card"><span>📱</span><h3>QR Codes</h3><p>Custom QR codes connecting customers to websites, locations and contact pages.</p></div>
+<div class="card"><span>🎨</span><h3>Digital Designs</h3><p>Attractive digital posters, advertisements and social media designs.</p></div>
+<div class="card"><span>⚡</span><h3>Web Effects</h3><p>Animated backgrounds, glowing effects and interactive website elements.</p></div>
+</div></section>
+<section id="portfolio"><h2 class="title">MY WORK</h2><div class="cards">
+<div class="project"><h3>🔥 Fireworks Website</h3><p>A promotional website with QR access, location information and animated effects.</p></div>
+<div class="project"><h3>📍 Business QR Page</h3><p>A simple QR landing page containing business information and location.</p></div>
+<div class="project"><h3>🚀 Coming Soon</h3><p>My next client project will appear here.</p></div>
+</div></section>
+<section><h2 class="title">ABOUT ME</h2><div class="about"><p>Hi! I'm Aswin. I enjoy creating websites and digital projects using HTML, CSS and JavaScript. My goal is to help small businesses build their online presence with simple and modern technology.</p></div></section>
+<section id="contact"><h2 class="title">LET'S WORK TOGETHER</h2><div class="contact"><p>Need a website or QR solution for your business?</p><a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">💬 CONTACT ME</a></div></section>
+<footer>© 2026 ASWIN WEB STUDIO • Built with HTML, CSS & JavaScript</footer>
+</body>
+</html>
